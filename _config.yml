@@ -1,0 +1,43 @@
+# Permalinks
+#
+permalink:           pretty
+
+# Setup
+title:               cbm.js
+tagline:             Diploma Thesis
+url:                 https://iamnapo.me
+baseurl:             /cbmjs
+
+# Markdown
+markdown:           kramdown
+extensions:         [fenced_code_blocks]
+redcarpet:
+  extensions:       [with_toc_data,autolink,smart]
+
+# Handling Reading
+safe:               false
+include:            [".htaccess"]
+exclude:            ["*.tag"]
+encoding:           "utf-8"
+markdown_ext:       "markdown,md"
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:         style
+  style:            :compressed
+
+plugins:
+  - jemoji
+  - jekyll-redirect-from
+
+# About/contact
+author:
+  name:              Napoleon-Christos Oikonomou
+  url:               https://iamnapo.me
+  email:             Napoleonoikon@gmail.com
+
+# Custom vars
+version:             1.5.0
+repo:                https://github.com/cbmjs/
