@@ -6,6 +6,13 @@ id: release-notes
 
 # {{ page.title }}
 
+## 1.6.0 *March 31, 2018*
+
+- <span class="tag">Breaking</span>: <span class="red">GOT AN ELECTICAL AND COMPUTER ENGINEERING MASTER'S DEGREE THANKS TO THAT PROJECT.</span>
+- __Fix__: Changed LUIS key.
+- __Add__: Added eslint support.
+- __Fix__: Minor bug fixes.
+
 ## 1.5.0 *🌱 March 1, 2018*
 
 - Renamed server code to `cbm-engine`.
