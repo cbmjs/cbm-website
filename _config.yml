@@ -5,8 +5,8 @@ permalink:           pretty
 # Setup
 title:               cbm.js
 tagline:             Diploma Thesis
-url:                 https://iamnapo.me
-baseurl:             /cbmjs
+url:                 https://cbm.js.org
+baseurl:             ""
 
 # Markdown
 markdown:           kramdown
@@ -39,5 +39,5 @@ author:
   email:             Napoleonoikon@gmail.com
 
 # Custom vars
-version:             1.6.0
+version:             1.9.0
 repo:                https://github.com/cbmjs/

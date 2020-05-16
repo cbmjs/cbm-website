@@ -6,9 +6,13 @@ id: release-notes
 
 # {{ page.title }}
 
+## 1.9.0 *May 16, 2020*
+
+- Nothing super extra 🤷; just cleaned up code and updated dependencies.
+
 ## 1.6.0 *March 31, 2018*
 
-- <span class="tag">Breaking</span>: <span class="red">GOT AN ELECTICAL AND COMPUTER ENGINEERING MASTER'S DEGREE THANKS TO THAT PROJECT.</span>
+- <span class="tag">Breaking</span>: <span class="tag red">Got an Electrical & Computer Engineering Master's Degree.</span>
 - __Fix__: Changed LUIS key.
 - __Add__: Added eslint support.
 - __Fix__: Minor bug fixes.
