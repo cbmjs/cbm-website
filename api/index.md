@@ -18,7 +18,7 @@ The module exports a single constructor which can be used to open an API connect
 const cbm = new CallByMeaning();
 ```
 
-In case that you are running your own copy of the cbmjs server, the constructor takes the hostname of the server as an optional argument. The default option evaluates to "[https://call-by-meaning.herokuapp.com](https://call-by-meaning.herokuapp.com/)".
+In case that you are running your own copy of the cbmjs server, the constructor takes the hostname of the server as an optional argument. The default option evaluates to "[https://call-by-meaning.onrender.com](https://call-by-meaning.onrender.com/)".
 
 ``` javascript
 CallByMeaning(host);

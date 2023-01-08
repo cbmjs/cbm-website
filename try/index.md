@@ -10,7 +10,7 @@ These are some projects that use cbmjs to its full extent.
 
 ## cbm-clock
 
-A simple one page app that displays an analog clock, used to demonstrate the workflow of cbmjs. View it [here](https://cbm-clock-demo.herokuapp.com/) and check the source code [here](https://github.com/cbmjs/cbm-clock).
+A simple one page app that displays an analog clock, used to demonstrate the workflow of cbmjs. View it [here](https://cbm-clock-demo.onrender.com/) and check the source code [here](https://github.com/cbmjs/cbm-clock).
 
 ## cbm-sherlock
 

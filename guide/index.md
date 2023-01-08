@@ -5,7 +5,7 @@ title: General
 
 {% include guide-tabs.html %}
 
-> The default instance of the server runs on `https://call-by-meaning.herokuapp.com`
+> The default instance of the server runs on `https://call-by-meaning.onrender.com`
 
 ## GitHub
 

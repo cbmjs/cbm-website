@@ -44,7 +44,7 @@ Help us expand our database by adding a concept below.
 $('#submit_form').submit(function(event) {
   event.preventDefault();
   $.ajax( {
-    url: 'https://call-by-meaning.herokuapp.com/new/concept/',
+    url: 'https://call-by-meaning.onrender.com/new/concept/',
     type: 'POST',
     data: $('#submit_form').serialize(),
     timeout: 15000,

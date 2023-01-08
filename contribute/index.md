@@ -98,7 +98,7 @@ $('#submit_form').submit(function(event) {
   var dataToSend = new FormData(this);
   dataToSend.append('isApi', $('#isAPI').hasClass('active'));
   $.ajax( {
-    url: 'https://call-by-meaning.herokuapp.com/new/function/',
+    url: 'https://call-by-meaning.onrender.com/new/function/',
     type: 'POST',
     data: dataToSend,
     timeout: 15000,
