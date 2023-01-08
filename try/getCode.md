@@ -13,7 +13,7 @@ Change the code below freely, click run, and you'll see the result.
 <script>var notebook = RunKit.createNotebook({
     element: document.getElementById("cbmcode"),
     title: 'getCode',
-    preamble: "import cbmApi from '@cbmjs/cbm-api'; const cbm = new cbmApi();console.warn = function noop(){};",
+    preamble: "require('fix-esm').register(); const cbmApi = require('@cbmjs/cbm-api').default; const cbm = new cbmApi(); console.warn = function noop(){};",
     nodeVersion: "18",
     minHeight: "250px",
     //onLoad: (n) => n.evaluate(),
