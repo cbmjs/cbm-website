@@ -13,7 +13,8 @@ Change the code below freely, click run, and you'll see the result.
 <script>var notebook = RunKit.createNotebook({
     element: document.getElementById("cbmuri"),
     title: 'getURI',
-    preamble: "const cbmApi = require('@cbmjs/cbm-api'); const cbm = new cbmApi();",
+    preamble: "import cbmApi from '@cbmjs/cbm-api'; const cbm = new cbmApi();",
+    nodeVersion: "18",
     minHeight: "350px",
     //onLoad: (n) => n.evaluate(),
     source: "const result = cbm.getURI('(the) big !! dog?!');\nresult"
