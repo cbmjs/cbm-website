@@ -14,7 +14,7 @@ Change the code below freely, click run, and you'll see the result.
     element: document.getElementById("cbmuri"),
     title: 'getURI',
     preamble: "const cbmApi = require('@cbmjs/cbm-api'); const cbm = new cbmApi();",
-    minHeight: "30%",
+    minHeight: "350px",
     //onLoad: (n) => n.evaluate(),
     source: "const result = cbm.getURI('(the) big !! dog?!');\nresult"
 })</script>
