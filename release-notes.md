@@ -8,7 +8,7 @@ id: release-notes
 
 ## 2.0.0 *Jan 08, 2022*
 
-- <span class="tag">Breaking</span>: <span class="tag red">Changed host from `Heroku` to `Render.com`.</span>
+- <span class="tag">Breaking</span>: Changed host from `Heroku` to `Render.com`.
 - __Fix__: Minor bug fixes.
 - __Fix__: Updated dependencies.
 
