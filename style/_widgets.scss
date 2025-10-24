@@ -188,8 +188,13 @@ h2, .apidoc h3 {
   }
 }
 
-.download #main p {
-  margin-bottom: .5em;
+.download {
+  h1 {
+    margin-top: 0;
+  }
+  #main p {
+    margin-bottom: .5em;
+  }
 }
 
 .tag {
@@ -221,30 +226,6 @@ a.blue:hover {
     content: " — ";
   }
 }
-
-// forums
-#forum-page {
-  .muut {
-    display: block;
-  }
-
-  .m-header {
-    height: 2.4em;
-  }
-
-  .m-subnavi {
-    background-color: #fff;
-  }
-
-  .m-login, .m-myname {
-    color: #333;
-  }
-
-  .m-navi {
-    display: none;
-  }
-}
-
 
 // docsearch
 

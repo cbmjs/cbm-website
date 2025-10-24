@@ -14,6 +14,15 @@ description: cbm lets you do cool stuff
     </g>
 </svg> function discovery and usage easier.</h4>
   <h4>Enjoyable syntax • Elegant API • Can make ☕</h4>
+
+  <div class="deprecation">
+  <h3 style="margin-top: 0; color: #c92a2a;">⚠️ Project Deprecated</h3>
+  <p style="margin-bottom: 0;">
+    This project has been deprecated and is no longer maintained.
+    This website is still here for the nostalgia and the vibes 🤙.
+  </p>
+</div>
+
   <div id="version-slurp">
     <a href="download/" class="tag blue">v{{ site.version }}</a>
   </div>

@@ -6,6 +6,13 @@ id: release-notes
 
 # {{ page.title }}
 
+## ∞.∞.∞ *October 25, 2025*
+
+- <span class="tag">Super Breaking</span>: Project officially archived.
+- __Remove__: All future updates (sorry, not sorry).
+- __Add__: Eternal nostalgia and fond memories.
+- __Fix__: Developer’s motivation to pretend this was still relevant.
+
 ## 2.0.0 *Jan 08, 2022*
 
 - <span class="tag">Breaking</span>: Changed host from `Heroku` to `Render.com`.

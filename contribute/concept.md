@@ -6,6 +6,8 @@ description: Help us by adding another concept to our database
 
 {% include contribute-tabs.html %}
 
+<div style="padding: 0.5rem 1rem; margin: 1.5rem 0; color: #7a7a7a; text-align: center;"><span class="tag red">Warning</span> While I appreciate the enthusiasm, contributions are no longer being accepted.</div>
+
 # Add another concept to the knowledge base.
 
 <br>
@@ -27,16 +29,16 @@ Help us expand our database by adding a concept below.
   <div class="form-row">
    <div class="form-group col-md-6" style="padding-left: 0;">
     <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" name="name" aria-describedby="name_help" placeholder="Concept Name" required>
+    <input type="text" class="form-control" id="name" name="name" aria-describedby="name_help" placeholder="Concept Name" required disabled>
     <small id="name_help" class="form-text text-muted">Please provide a valid URI.</small>
   </div>
     <div class="form-group col-md-6" style="padding-right: 0;">
     <label for="desc">Description</label>
-    <input type="text" class="form-control" id="desc" name="desc" aria-describedby="desc_help" placeholder="Concept Description" required>
+    <input type="text" class="form-control" id="desc" name="desc" aria-describedby="desc_help" placeholder="Concept Description" required disabled>
     <small id="desc_help" class="form-text text-muted">Please be as specific as you can.</small>
   </div>
   </div>
-  <button type="submit" class="btn" style="background-color: #1E8EF3; color: #fff" id="submit_button">Submit</button>
+  <button type="button" class="btn" style="background-color: #999; color: #fff; cursor: not-allowed;" id="submit_button" disabled>Submit</button>
 </form>
 </div>
 

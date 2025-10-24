@@ -6,6 +6,8 @@ description: Help us by adding another function to our database
 
 {% include contribute-tabs.html %}
 
+<div style="padding: 0.5rem 1rem; margin: 1.5rem 0; color: #7a7a7a; text-align: center;"><span class="tag red">Warning</span> While I appreciate the enthusiasm, contributions are no longer being accepted.</div>
+
 # Add another function to the knowledge base.
 
 <br>
@@ -26,51 +28,51 @@ Help us expand our database by adding a function below.
 <form id="submit_form">
   <div class="form-group">
     <label for="func_name">Name</label>
-    <input type="text" class="form-control" id="func_name" name="name" aria-describedby="func_name_help" placeholder="Function Name" required>
+    <input type="text" class="form-control" id="func_name" name="name" aria-describedby="func_name_help" placeholder="Function Name" required disabled>
     <small id="func_name_help" class="form-text text-muted">Please try to use a descriptive, but small name.</small>
   </div>
   <div class="form-group">
     <label for="func_desc">Description</label>
-    <input type="text" class="form-control" id="func_desc" name="desc" aria-describedby="func_desc_help" placeholder="Function Description" required>
+    <input type="text" class="form-control" id="func_desc" name="desc" aria-describedby="func_desc_help" placeholder="Function Description" required disabled>
     <small id="func_desc_help" class="form-text text-muted">Please be as specific as you can. When describing arguments enclose their name in ` .</small>
   </div>
   <div class="form-row">
    <div class="form-group col-md-6" style="padding-left: 0;">
     <label for="func_args">Input Arguments</label>
-    <input type="text" class="form-control" id="func_args" name="argsNames" aria-describedby="func_args_help" placeholder="Input concepts">
+    <input type="text" class="form-control" id="func_args" name="argsNames" aria-describedby="func_args_help" placeholder="Input concepts" disabled>
     <small id="func_args_help" class="form-text text-muted">Provide valid URIs in the format: arg1,arg2</small>
   </div>
     <div class="form-group col-md-6" style="padding-right: 0;">
     <label for="func_in_units">Input Units</label>
-    <input type="text" class="form-control" id="func_in_units" name="argsUnits" aria-describedby="func_in_units_help" placeholder="Input Units">
+    <input type="text" class="form-control" id="func_in_units" name="argsUnits" aria-describedby="func_in_units_help" placeholder="Input Units" disabled>
     <small id="func_in_units_help" class="form-text text-muted">Provide valid URIs in the format: unit1,unit2. If a unit can't be defined for a concept put "-" in its place.</small>
   </div>
   </div>
   <div class="form-row">
   <div class="form-group col-md-6" style="padding-left: 0;">
     <label for="func_returns">Output Arguments</label>
-    <input type="text" class="form-control" id="func_returns" name="returnsNames" aria-describedby="func_returns_help" placeholder="Output concepts" required>
+    <input type="text" class="form-control" id="func_returns" name="returnsNames" aria-describedby="func_returns_help" placeholder="Output concepts" required disabled>
     <small id="func_returns_help" class="form-text text-muted">Provide valid URIs in the format: arg1,arg2</small>
   </div>
     <div class="form-group col-md-6" style="padding-right: 0;">
     <label for="func_out_units">Output Units</label>
-    <input type="text" class="form-control" id="func_out_units" name="returnsUnits" aria-describedby="func_out_units_help" placeholder="Output Units" required>
+    <input type="text" class="form-control" id="func_out_units" name="returnsUnits" aria-describedby="func_out_units_help" placeholder="Output Units" required disabled>
     <small id="func_out_units_help" class="form-text text-muted">Provide valid URIs in the format: unit1,unit2. If a unit can't be defined for a concept put "-" in its place.</small>
   </div>
   </div>
   <input type="button" class="btn btn-info" id="isAPI" style="margin: 1rem 0;" data-toggle="button" aria-pressed="false" autocomplete="off" value='This is an API!'>
   <div class="form-group" id="source-file">
     <label for="func_code">Source Code File</label>
-    <input id="func_code" name="func_code" aria-describedby="func_code" placeholder="Function .js file" type="file" class="file" data-hidden-thumbnail-content= "false" data-show-preview="false" data-show-remove="false" data-show-cancel="false" data-allowed-file-extensions='["js"]' data-show-upload="false" required>
+    <input id="func_code" name="func_code" aria-describedby="func_code" placeholder="Function .js file" type="file" class="file" data-hidden-thumbnail-content= "false" data-show-preview="false" data-show-remove="false" data-show-cancel="false" data-allowed-file-extensions='["js"]' data-show-upload="false" required disabled>
     <small id="func_code" class="form-text text-muted">Only .js files are accepted. This <strong><em>must</em></strong> have the same name with the function name.</small>
   </div>
   <div class="form-group" id="api_link">
     <label for="func_name">API Endpoint</label>
-    <input type="text" class="form-control" id="api_link" name="api_link" aria-describedby="api_link_help" placeholder="API Endpoint" required>
+    <input type="text" class="form-control" id="api_link" name="api_link" aria-describedby="api_link_help" placeholder="API Endpoint" required disabled>
     <small id="api_link_help" class="form-text text-muted">Please provide the full URI, including the host.</small>
   </div>
   <div id="spaceDiv"></div>
-  <button type="submit" class="btn" style="background-color: #1E8EF3; color: #fff" id="submit_button">Submit</button>
+  <button type="button" class="btn" style="background-color: #999; color: #fff; cursor: not-allowed;" id="submit_button" disabled>Submit</button>
 </form>
 </div>
 
