@@ -1,3 +1,9 @@
+:root {
+  --docsearch-primary-color: #1E8EF3;
+  --docsearch-highlight-color: #1E8EF3;
+  --docsearch-logo-color: #1E8EF3;
+}
+
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
@@ -224,18 +230,5 @@ a.blue:hover {
 
   &:before {
     content: " — ";
-  }
-}
-
-// docsearch
-
-.ds-dropdown-menu {
-  /* Main category headers */
-  .algolia-docsearch-suggestion--category-header {
-    background-color: $seach-background;
-  }
-  /* Highlighted search terms */
-  .algolia-docsearch-suggestion--highlight {
-    color: $brand-color;
   }
 }

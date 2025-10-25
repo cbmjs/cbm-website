@@ -1,77 +1,73 @@
 <!doctype html>
 
 {% capture nav %}
-  <a href="./">Home</a>
-  <a href="guide/">Guide</a>
-  <a href="api/">API</a>
-  <a href="download/">Download</a>
-  <a href="contribute/">contribute</a>
+<a href="./">Home</a>
+<a href="guide/">Guide</a>
+<a href="api/">API</a>
+<a href="download/">Download</a>
+<a href="contribute/">contribute</a>
 {% endcapture %}
 
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<base href="{{ site.baseurl }}/" />
 
-<head>
-  <meta charset="UTF-8">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <base href="{{ site.baseurl }}/">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#1E8EF3">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+		<title>{{ page.title }}{% if page.path != "index.md" %} &middot; {{ site.title }} {% endif %}</title>
 
-  <title>
-    {{ page.title }}{% if page.path != "index.md" %} &middot; {{ site.title }} {% endif %}
-  </title>
+		{% if page.description %}
+		<meta name="description" content="{{ page.description }}" />
+		{% endif %}
 
-  {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-  {% endif %}
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+		<meta property="og:title" content="{{ page.title }}{% if page.path != "index.md" %} · {{ site.title }}{% endif %}" />
+		{% if page.description %}
+		<meta property="og:description" content="{{ page.description }}" />
+		{% endif %}
+		<meta name="theme-color" content="#1E8EF3" />
+		<link rel="shortcut icon" href="img/favicon-152x152.png" />
+		<link rel="icon" type="image/png" sizes="152x152" href="img/favicon-152x152.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon-152x152.png" />
+		<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4" defer></script>
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+	</head>
 
-  <!-- favicons -->
-  <link rel="shortcut icon" href="img/favicon-152x152.png">
-  <link rel="icon" type="image/png" sizes="152x152" href="img/favicon-152x152.png">
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon-152x152.png">
+	<body id="{{ page.id }}" class="{{ page.class }}">
+		<div class="wrap">
+			{% include fork-on-github.html %}
 
-  <!-- style -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+			<header id="header">
+				<nav id="nav">
+          {{ nav }}
+          <div id="docsearch"></div>
+        </nav>
+			</header>
 
-</head>
+			<main id="main">{{ content }}</main>
+		</div>
 
-<body id="{{ page.id }}" class="{{ page.class }}">
-
-  <div class="wrap">
-    {% include fork-on-github.html %}
-
-    <header id="header">
-      <!-- <span id="logo">
-        <a href="" title="cbm.js"><img id="cbm-logo" src="img/logo/cbm240x.png"></a>
-      </span> -->
-
-      <nav id="nav">
-        {{ nav }}
-      </nav>
-      <div id="search">
-        <label for="label">Search on this site: </label>
-        <div class="input-wrapper">
-          <input placeholder="e.g. cbm.call..." type="search" id="doc-search" class="doc-search" />
-        </div>
-      </div>
-    </header>
-
-    <main id="main">
-      {{ content }}
-    </main>
-
-  </div>
-
-  <footer id="footer">
-    <div class="wrap" style="display: table"><span style="display: table-cell;vertical-align:middle;">Made with
-    <span style="color: #ff0000;">&hearts;</span> by
-    <a href="https://iamnapo.me">Napoleon</a>.</span></div>
-  </footer>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script src="script.js"></script>
-</body>
-
+		<footer id="footer">
+			<div class="wrap" style="display: table">
+				<span style="display: table-cell; vertical-align: middle"
+					>Made with <span style="color: #ff0000">&hearts;</span> by <a href="https://iamnapo.me">Napoleon</a>.</span
+				>
+			</div>
+		</footer>
+		<script type="module">
+			!function (t, e) { function n(t, e) { for (var n, i = 0, o = (t || []).length; o > i; i++)n = t[i], null != n && e(n, i) === !1 && i--; return t } function i(t, e) { (t.getAttribute("href") == e || t.getAttribute("href")[1] == e) && t.setAttribute("class", "current") } function o(e) { e && e.keyCode && 27 != e.keyCode || (t.removeEventListener("keyup", o), t.removeEventListener("click", o), r.className = "") } function a() { t.addEventListener("keyup", o), t.addEventListener("click", o), r.className = "open" } var c = function (e, n) { return (n || t).querySelectorAll(e) }; n(c("nav a"), function (t) { var e = location.toString().split("/")[3]; i(t, e + "/") }), n(c("#tabs a"), function (t) { var e = location.toString().split("/").slice(3).join("/"); i(t, e) }), e.toc && n(c("#main h2"), function (t) { toc.innerHTML += "<p><a href=" + location.toString() + "#" + t.id + ">" + (t.innerText || t.textContent) + "</a></p>" }), n(c("h2, .apidoc h3"), function (t) { t.onclick = function () { location.hash = t.firstChild.name || t.getAttribute("id") } }); var r = c("#langs")[0], u = c("#current-lang")[0]; u && u.addEventListener("click", function (t) { t.stopPropagation(), t.preventDefault(), r.className ? o() : a() }) }(document, window);
+			docsearch({
+				container: "#docsearch",
+				appId: "EGJ0HD28FO",
+				indexName: "cbm.js.org",
+				apiKey: "ab49267cce4057e5e9bde8963b107d9f",
+			});
+		</script>
+	</body>
 </html>

@@ -44,6 +44,11 @@
 }
 
 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
   font-size: 80%;
   line-height: 3;
   float: left;
@@ -53,6 +58,15 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #999;
+    line-height: normal;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  #docsearch {
+    margin-left: auto;
   }
 
   .current {
@@ -61,19 +75,26 @@
     cursor: default;
   }
 
+  @media (min-width: $medium-break-point) and (max-width: 1165px) {
+    padding: 0 8rem;
+  }
+
   @media (max-width: $small-break-point) {
     margin: 0.5rem 0 1.5rem;
     line-height: 2.4;
     font-size: 80%;
     float: left;
-    width: 100%;
+    padding: 0;
 
     a {
       display: inline-block;
       box-sizing: border-box;
-      //float: left;
       clear: both;
       margin: 0.2rem 0;
+    }
+
+    #docsearch {
+      margin-left: 0;
     }
   }
 }
